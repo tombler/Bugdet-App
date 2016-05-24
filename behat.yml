@@ -1,0 +1,9 @@
+default:
+    extensions:
+        Behat\MinkExtension\Extension:
+            goutte: ~
+            default_session: goutte
+            javascript_session: selenium2
+            browser_name: 'chrome'
+            selenium2: 
+                capabilities: {"browserName": 'chrome', "browser": 'chrome', "version": "29", 'chrome': {'switches':['--no-sandbox'], 'userDataDir': '/path/to/your/custom/profile'}}
